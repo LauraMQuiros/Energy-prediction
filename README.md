@@ -13,6 +13,12 @@ For running the jupyter notebook
     conda install jupyter
 ```
 
+## Data Analysis
+- The data is hourly and spans 10 months from november 2023 to august 2024
+- The data is split into 2 datasets: train and test from which only train has the target variable
+- The data has 1 non-numerical feature `measurement_time` which is a datetime object
+- The data has 6 temperature features, 5 solar radiation features, 2 wind features and a clouds feature
+
 # Research 
 
 There are plenty of energy forecasting competitions in Kaggle. I found the following
