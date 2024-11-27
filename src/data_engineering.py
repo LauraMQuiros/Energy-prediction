@@ -7,6 +7,8 @@ def data_engineering(train: pd.DataFrame, test: pd.DataFrame):
     # interpolate missing values
     # eliminate radiation_perpendicular
     # log transformation of target
+    # add week day and hour columns
+
     pass
 
 
