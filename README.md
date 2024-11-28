@@ -19,6 +19,21 @@ For running the jupyter notebook
 - The data has 1 non-numerical feature `measurement_time` which is a datetime object
 - The data has 6 temperature features, 5 solar radiation features, 2 wind features and a clouds feature
 
+## Data Preprocessing & Feature Engineering
+- We separate the `measurement_time` into month, day of the week and hour of the day, which improves the RMSE score of the basic linear regression model
+- We realise that shuffling the data before splitting it into train and validation sets improves the RMSE of the basic linear regression model with PCA from $11$ to $8.1$
+- Without PCA nor scaling, with minmax scaling and with standard scaling, RSME yields a value of $11.31$ while making the log of the input features gives $10.61$
+- Combining minmax scaling and log of the input features gives the best RMSE of $9.86$
+- Not using the year improves the RMSE from $9.86$ to $9.71$
+- Using one-hot encoded seasons instead of month improves the RMSE from $9.71$ to $9.54$
+- Using one-hot encoded time_of_day instead of hour improves the RMSE from $9.54$ to $8.89$
+- Using lagged features improves to $8.68$
+
+## Model Selection
+
+## Model Evaluation
+
+
 # Research 
 
 There are plenty of energy forecasting competitions in Kaggle. I found the following
